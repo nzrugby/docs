@@ -1,1 +1,7 @@
-# docs
+# Understand Docker
+1. What is docker?
+    Traditionally, when we develop or deploy software projects we must setup the environment first. This environment includes operating system which the software will run on and some relying items. In whindows these relying items are something like dynamic link library(dll file). In most cases your development machine is different from the deployment one which can be a server or cloud. So when you finish the  development if you want to deploy your project on server or cloud you must have the same environment as develpment one. You have to setup environment again and must ensure they keep same. Unfortunatly this is a time-consuming and error-prone job. Now docker appears and acts as a hero to save this world.
+    So what's docker and what is its magic?
+    In a very simple description docker is a wrapper which wraps software and its relying items inside. That's all and nothing seems magic. For example if you develop an asp.netcore project, you finally output some dll files or exe files as final release files into a destined folder. All these files will rely some system librarys like system.web and son on to run. At this point docker will package or wrap this output folder into a file which we call it docker image. Now we can transfer this image file to another computer which has the same system as development one. Then we use docker to run this image file it will get the same result as development one.
+    From above process we can see docker actually wrap nealy all software external environment except operating system. In this way it's portable. It can be run in any machine which have the same operating system as original one no matter it's virtual machine or not.
+

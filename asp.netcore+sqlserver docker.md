@@ -21,4 +21,4 @@
         'Server=192.168.1.67' means sqlsever ip address with 1433 port. 'Database=dockertest' means create a new database named dockertest in server. 'User ID=SA' means root login user is SA. SA is default system administrator.
              
       Under the project open program.cs and add following code:
-      ![alt text](https://user-images.githubusercontent.com/31294078/47691778-4359ee00-dc58-11e8-9926-94821b1da323.png)
+      ![code](https://user-images.githubusercontent.com/31294078/47692393-540b6380-dc5a-11e8-81f8-4e5614586f8a.png)

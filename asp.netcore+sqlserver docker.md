@@ -21,4 +21,34 @@
         'Server=192.168.1.67' means sqlsever ip address with 1433 port. 'Database=dockertest' means create a new database named dockertest in server. 'User ID=SA' means root login user is SA. SA is default system administrator.
              
       Under the project open program.cs and add following code:
-      ![code](https://user-images.githubusercontent.com/31294078/47692393-540b6380-dc5a-11e8-81f8-4e5614586f8a.png)
+      class Program
+      {
+        static void Main(string[] args)
+        {
+            AddStudentData();
+            GetStudentData();
+            Console.ReadKey();
+            
+            Console.ReadKey();
+        }
+
+        static void GetStudentData()
+        {
+            var db = new StudentDbContext();
+            foreach (var item in db.Student)
+            {
+                Console.WriteLine($"id = {item.id}   name = {item.name}  qty = {item.age}");
+            }
+        }
+
+        static void AddStudentData()
+        {
+            var db = new StudentDbContext();
+            var student = new Student { id = Guid.NewGuid(), name = "tom", age = new Random().Next(15, 25) };
+            db.Add(student);
+            db.SaveChanges();
+            
+        }
+    }
+
+    Then you can run this project and this console app will contect to sqlserver docker in linux and create and save some data record in database.   

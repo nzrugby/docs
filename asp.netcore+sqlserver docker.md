@@ -51,4 +51,5 @@
         }
     }
 
+    In PM console input 'add-migration first-migration' then type 'update-database' to generate the real database in server.
     Then you can run this project and this console app will contect to sqlserver docker in linux and create and save some data record in database.   

@@ -4,5 +4,5 @@
     So what's docker and what is its magic?
     In a very simple description docker is a wrapper which wraps software and its relying items inside. That's all and nothing seems magic. For example if you develop an asp.netcore project, you finally output some dll files or exe files as final release files into a destined folder. All these files will rely some system librarys like system.web and son on to run. At this point docker will package or wrap this output folder into a file which we call it docker image. Now we can transfer this image file to another computer which has the same system as development one. Then we use docker to run this image file it will get the same result as development one.
     From above process we can see docker actually wrap nealy all software external environment except operating system. In this way it's portable. It can be run in any machine which have the same operating system as original one no matter it's virtual machine or not.
-![image](https://user-images.githubusercontent.com/31294078/47691778-4359ee00-dc58-11e8-9926-94821b1da323.png)
+
 
